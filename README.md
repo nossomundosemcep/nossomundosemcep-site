@@ -1,4 +1,4 @@
-# Nosso Mundo Sem CEP — Site de Teste com Galeria
+# Nosso Mundo Sem CEP — Desapegando para pegar estrada daqui há alguns dias!
 
 ## Como usar
 
