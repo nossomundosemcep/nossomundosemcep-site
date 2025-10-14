@@ -1,0 +1,94 @@
+/* styles.css — simples e responsivo */
+/* Tipografia: recomenda-se instalar Helvetica Neue ou Univers; fallback para system-ui */
+:root{
+  --bg:#fbf7f4;
+  --card:#ffffff;
+  --accent:#e07a3f; /* laranja/terracota */
+  --accent-dark:#d65a2a;
+  --muted:#6b6b6b;
+  --maxw:1100px;
+  --radius:10px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Helvetica Neue", "Univers", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica", Arial;
+  background:var(--bg);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{max-width:var(--maxw); margin:0 auto; padding:24px;}
+
+.site-header{
+  background:transparent;
+  position:sticky;
+  top:0;
+  z-index:20;
+  backdrop-filter: blur(6px);
+}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:16px}
+.logo{display:flex; align-items:center; gap:10px}
+.logo-mark{width:38px; height:38px; border-radius:50%; background:linear-gradient(180deg,var(--accent),var(--accent-dark)); display:flex; align-items:center; justify-content:center; color:white; font-weight:700}
+.logo-text h1{margin:0; font-size:18px; line-height:1}
+.logo-text h1 span{font-weight:600}
+
+.nav a{margin-left:14px; text-decoration:none; color:#333; font-weight:600}
+.nav a:hover{color:var(--accent-dark)}
+
+.hero{
+  padding:48px 0;
+  border-radius:12px;
+  margin-top:8px;
+}
+.hero-inner{display:flex; align-items:center; gap:30px; flex-wrap:wrap}
+.hero-text{flex:1 1 380px}
+.hero-text h2{margin:0 0 12px; font-size:28px; color:var(--accent-dark)}
+.hero-text p{color:var(--muted); margin:0 0 18px}
+.hero-ctas{display:flex; gap:12px}
+.btn{display:inline-block; text-decoration:none; padding:10px 14px; border-radius:8px; font-weight:700; font-size:14px}
+.btn-primary{background:var(--accent); color:#fff}
+.btn-outline{border:2px solid var(--accent); color:var(--accent); background:transparent}
+.btn.small{padding:8px 10px; font-size:13px}
+.btn.whatsapp{border:2px solid #25D366; color: #25D366; background:transparent}
+
+.hero-image{flex:0 0 220px; text-align:center}
+.globe{width:200px; height:auto}
+
+.section{padding:40px 0}
+.section-title{margin:0 0 8px; font-size:20px}
+.section-sub{color:var(--muted); margin:0 0 18px}
+
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px}
+.card{background:var(--card); border-radius:var(--radius); overflow:hidden; box-shadow:0 6px 18px rgba(34,34,34,0.06); display:flex; flex-direction:column}
+.card img{width:100%; height:200px; object-fit:cover; background:#efefef}
+.card-body{padding:14px}
+.card-body h4{margin:0 0 6px}
+.price{color:var(--accent-dark); font-weight:800; margin:6px 0}
+.desc{color:var(--muted); margin:8px 0 12px}
+.card-actions{display:flex; gap:8px}
+
+.about p{max-width:800px; color:var(--muted)}
+
+.contact-inner{display:flex; gap:30px; flex-wrap:wrap; align-items:flex-start}
+.contact-form{background:var(--card); padding:16px; border-radius:10px; flex:1 1 320px; min-width:260px; box-shadow:0 6px 18px rgba(34,34,34,0.04)}
+.contact-form label{display:block; font-weight:700; margin:8px 0 6px}
+.contact-form input, .contact-form textarea{width:100%; padding:10px; border-radius:8px; border:1px solid #e7e7e7}
+.contact-list{list-style:none; padding:0; margin:6px 0 12px}
+.contact-list a{color:var(--accent-dark); text-decoration:none; font-weight:700}
+
+.small{font-size:13px; color:var(--muted)}
+
+.site-footer{padding:18px 0; text-align:center; color:var(--muted); border-top:1px solid #f0e9e6; margin-top:30px}
+
+/* Responsive tweaks */
+@media (max-width:720px){
+  .logo-text h1{font-size:16px}
+  .hero-text h2{font-size:20px}
+  .hero-image{display:none}
+  .header-inner{padding:8px 0}
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nosso Mundo Sem CEP — Vitrine</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Vitrine de produtos — Nosso Mundo Sem CEP">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark">●</div>
+        <div class="logo-text">
+          <h1>Nosso Mundo<br><span>Sem CEP</span></h1>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Vivendo o mundo sem endereço, mas com propósito</h2>
+          <p>Peças selecionadas, feitas para quem leva a vida na estrada — design funcional e alma nômade.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#produtos">Ver Produtos</a>
+            <a class="btn btn-outline" href="#contato">Entrar em Contato</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- decorative globe illustration as SVG -->
+          <svg viewBox="0 0 200 200" class="globe" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Globo">
+            <circle cx="100" cy="100" r="95" fill="#f6efe9"/>
+            <path d="M20 110c15-30 50-40 80-30s50 30 70 40" stroke="#d65a2a" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M60 60c20-15 50-10 70 5" stroke="#e07a3f" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="products section">
+      <div class="container">
+        <h3 class="section-title">Produtos</h3>
+        <p class="section-sub">Galeria com fotos, descrição curta e preço. Entre em contato para comprar.</p>
+
+        <div class="grid">
+          <!-- Product 1 -->
+          <article class="card">
+            <img src="images/product1.svg" alt="Produto 1 — Bolsa Nômade" />
+            <div class="card-body">
+              <h4>Bolsa Nômade</h4>
+              <p class="price">R$ 249,00</p>
+              <p class="desc">Bolsa resistente, ideal para viagens e armazenamento minimalista.</p>
+              <div class="card-actions">
+                <a class="btn small" href="mailto:nossomundosemcep@gmail.com">Enviar e‑mail</a>
+                <a class="btn small whatsapp" href="https://wa.me/5547996135167" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="card">
+            <img src="images/product2.svg" alt="Produto 2 — Caneca Terracota" />
+            <div class="card-body">
+              <h4>Caneca Terracota</h4>
+              <p class="price">R$ 59,00</p>
+              <p class="desc">Cerâmica artesanal com acabamento terracota — ideal para acampamentos.</p>
+              <div class="card-actions">
+                <a class="btn small" href="mailto:nossomundosemcep@gmail.com">Enviar e‑mail</a>
+                <a class="btn small whatsapp" href="https://wa.me/5547996135167" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="card">
+            <img src="images/product3.svg" alt="Produto 3 — Adesivo Logo" />
+            <div class="card-body">
+              <h4>Adesivo 'Nosso Mundo'</h4>
+              <p class="price">R$ 15,00</p>
+              <p class="desc">Adesivo resistente à água — perfeito para o motorhome e malas.</p>
+              <div class="card-actions">
+                <a class="btn small" href="mailto:nossomundosemcep@gmail.com">Enviar e‑mail</a>
+                <a class="btn small whatsapp" href="https://wa.me/5547996135167" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="container">
+        <h3 class="section-title">Sobre</h3>
+        <p>Nosso Mundo Sem CEP é um projeto de vida que materializa a filosofia nômade: produtos selecionados que unem simplicidade, durabilidade e design. Cada item passa por uma curadoria pensando no uso em viagem e no cotidiano minimalista.</p>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact">
+      <div class="container contact-inner">
+        <div>
+          <h3 class="section-title">Contato</h3>
+          <p>Para comprar ou tirar dúvidas, fale conosco:</p>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:nossomundosemcep@gmail.com">nossomundosemcep@gmail.com</a></li>
+            <li>WhatsApp: <a href="https://wa.me/5547996135167" target="_blank" rel="noopener noreferrer">+55 (47) 99613‑5167</a></li>
+          </ul>
+          <p class="small">Dica: substitua os contatos pelos seus reais no arquivo <code>index.html</code>.</p>
+        </div>
+        <form class="contact-form" action="mailto:nossomundosemcep@gmail.com" method="post" enctype="text/plain">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+          <label for="mensagem">Mensagem / Pedido</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quero comprar..." required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar por e‑mail</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Nosso Mundo Sem CEP — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+</body>
+</html>
